@@ -1,0 +1,154 @@
+body
+{
+    display: flex;
+    background:linear-gradient(#C67C38,#AF2413);
+    background-repeat: no-repeat;
+    height: 150vh;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+body::-webkit-scrollbar 
+{
+    display: none;
+}
+    
+
+.container
+{
+    margin-top: 20px;
+    width: 800px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 60px;
+
+}
+
+#task-in
+{
+    position: relative;
+    background:linear-gradient(to right,deepskyblue,greenyellow);
+    justify-content: center;
+    height: 60px;
+    box-shadow: 15px 10px 40px rgba(197, 123, 148, 0.864),
+     10px 15px 60px rgba(172, 54, 166, 0.947);
+    padding: 30px 55px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+input, button
+{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+input
+{
+    width: 60%;
+    padding: 20px 15px;
+    font-size: 16px;
+    position: relative;
+    background:linear-gradient(to left,aquamarine, pink);
+    transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+}
+
+input:focus
+{
+    border: 3px solid;
+    size: zoom;
+    border-color: aqua;
+    box-shadow: 0px 30px 1em -25px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1,1.1);
+}
+
+#task-in button
+{
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 55px;
+    font-size: 15px;
+    background:aqua;
+    color:darkblue;
+    transition: transform 0.5s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.4s ease;
+}
+
+button:hover
+{
+    box-shadow: 0px 30px 1em -25px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2,1.2);
+}
+
+button
+{
+    cursor: pointer;
+}
+
+#task-in button:active
+{
+    box-shadow: inset 5px 5px 10px rgba(183, 170, 170, 0.741),
+    -5px -5px 20px yellowgreen;
+}
+
+.title
+{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.title, #tasks
+{
+    padding: 20px 50px;
+}
+
+#temp
+{
+    display: flex;
+    height: 25px;
+    background:linear-gradient(to left,blue,pink);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: monospace;
+    transition: transform 0.3s cubic-bezier(0.67, -0.33, 0.62, 1.35), box-shadow 0.6s ease;
+}
+
+#tasks
+{
+    margin-top: -50px;
+}
+
+.done
+{
+    position: relative;
+    color: rgb(34, 200, 34);
+    background: transparent;
+    font-size: 25px;
+}
+
+.del
+{
+    position: relative;
+    color: red;
+    background: transparent;
+    font-size: 25px;
+}
+
+.completed
+{
+    text-decoration: line-through;
+    transform: scale(0.966,0.966);
+    opacity: 0.6;
+}
+
+
+#taskname
+{
+    width: 85%;
+}
